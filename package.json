@@ -1,0 +1,25 @@
+{
+  "name": "@aaraz/solhelper",
+  "version": "1.0.3",
+  "description": "Simplified Abstraction on solana web3.js package.it containe the more simplified version of the solana network action e.g. checking balance,performing transection and more.",
+  "scripts": {
+    "build": "tsup"
+  },
+  "author": "aaraz",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@solana/web3.js": "^1.91.4",
+    "bs58": "^5.0.0"
+  }
+}
