@@ -1,7 +1,5 @@
 import {
   Transaction,
-  Connection,
-  clusterApiUrl,
   PublicKey,
   LAMPORTS_PER_SOL,
   SystemProgram,
@@ -9,7 +7,7 @@ import {
   Keypair,
 } from "@solana/web3.js";
 import bs58 from "bs58";
-
+import { conn } from "./lib";
 export async function SendSolana(params: {
   FromPubKey: string;
   FromSecKey: string;
@@ -27,9 +25,6 @@ export async function SendSolana(params: {
   } else if (params.FromPubKey === params.ToPubKey) {
     throw new Error("Sender and Receiver Public Key is Same");
   }
-  const conn = new Connection(
-    process.env.solana_rpc_url || clusterApiUrl("devnet")
-  );
   const trans = new Transaction();
   const PubSender = new PublicKey(params.FromPubKey);
   const PubReceiver = new PublicKey(params.ToPubKey);
