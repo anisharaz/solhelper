@@ -1,6 +1,6 @@
 {
   "name": "@aaraz/solhelper",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Simplified Abstraction on solana web3.js package.it containe the more simplified version of the solana network action e.g. checking balance,performing transection and more.",
   "scripts": {
     "build": "tsup ./src/index.ts --dts",
