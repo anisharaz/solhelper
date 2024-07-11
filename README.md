@@ -3,6 +3,6 @@
 ```
 npm i @aaraz/solhelper
 ```
-Now you can start importing functions from the package e.g. SendSol function
+Now you can start importing functions from the package e.g. SendSolana function
 ```
 import { SendSol } from from "@aaraz/solhelper"

@@ -9,14 +9,12 @@ import {
   Keypair,
 } from "@solana/web3.js";
 import bs58 from "bs58";
-import { SolNetwork } from "../types/All";
 
-export async function SendSol(params: {
+export async function SendSolana(params: {
   FromPubKey: string;
   FromSecKey: string;
   sol_amount: number;
   ToPubKey: string;
-  network: SolNetwork;
 }) {
   if (
     !PublicKey.isOnCurve(params.FromPubKey) ||
@@ -29,7 +27,9 @@ export async function SendSol(params: {
   } else if (params.FromPubKey === params.ToPubKey) {
     throw new Error("Sender and Receiver Public Key is Same");
   }
-  const conn = new Connection(clusterApiUrl(params.network));
+  const conn = new Connection(
+    process.env.solana_rpc_url || clusterApiUrl("devnet")
+  );
   const trans = new Transaction();
   const PubSender = new PublicKey(params.FromPubKey);
   const PubReceiver = new PublicKey(params.ToPubKey);
