@@ -18,7 +18,6 @@ export async function SendTokenTransaction({
   amount,
 }: {
   SendTo: string;
-  FromSecretKey: string;
   SendFrom: string;
   amount: number;
   MintAddress: string;
