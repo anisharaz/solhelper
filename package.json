@@ -27,5 +27,9 @@
   "dependencies": {
     "@solana/web3.js": "^1.91.4",
     "bs58": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anisharaz/solhelper"
   }
 }
