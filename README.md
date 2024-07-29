@@ -21,3 +21,5 @@ SendSolana({
 })
 ```
 #### Note: By default the package use devnet. You can provide the rpc url by setting `solana_rpc_url` as environment variable
+
+### View full documentation [here](https://github.com/anisharaz/solhelper)
