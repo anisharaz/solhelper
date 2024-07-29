@@ -1,5 +1,5 @@
 import { Keypair, PublicKey } from "@solana/web3.js";
-import { conn, GetTokenDecimals } from "./lib";
+import { conn, GetTokenDecimals } from "../lib/lib";
 import base58 from "bs58";
 import { getOrCreateAssociatedTokenAccount, transfer } from "@solana/spl-token";
 

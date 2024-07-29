@@ -7,7 +7,7 @@ import {
   Keypair,
 } from "@solana/web3.js";
 import bs58 from "bs58";
-import { conn } from "./lib";
+import { conn } from "../lib/lib";
 export async function SendSolana(params: {
   FromPubKey: string;
   FromSecKey: string;

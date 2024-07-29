@@ -9,7 +9,7 @@ import {
   Transaction,
   TransactionInstruction,
 } from "@solana/web3.js";
-import { conn, GetTokenDecimals } from "./lib";
+import { conn, GetTokenDecimals } from "../lib/lib";
 
 export async function SendTokenTransaction({
   SendFrom,

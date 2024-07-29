@@ -1,5 +1,5 @@
 import { PublicKey, LAMPORTS_PER_SOL } from "@solana/web3.js";
-import { conn } from "./lib";
+import { conn } from "../lib/lib";
 
 export async function GetBalance(params: {
   PubKey: string;

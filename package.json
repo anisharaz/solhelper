@@ -25,6 +25,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "dependencies": {
+    "@metaplex-foundation/js": "^0.20.1",
     "@solana/spl-token": "^0.4.8",
     "@solana/web3.js": "^1.95.0",
     "bs58": "^5.0.0"
