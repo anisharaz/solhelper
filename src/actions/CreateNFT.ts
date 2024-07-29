@@ -70,7 +70,7 @@ export async function CreateNFT({
       sellerFeeBasisPoints: 0,
       symbol: Metadata.symbol,
       isMutable: isMutable,
-      isCollection: true,
+      isCollection: false,
     },
     { commitment: "finalized" }
   );
